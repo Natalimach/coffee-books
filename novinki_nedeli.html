@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="New_books_and_form" content="Страница о новых поступлениях и заполнение заявки на книгу">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Новинки недели</title>
+</head>
+
+<body>
+
+  <div class="header-novinkinedeli-logo">
+    <img src="images/aboutcafefoto1.png" alt="логотип книги">
+  </div>
+
+  <main class="novinkinedeli">
+    <section class="novinkinedeli-all">
+      <h2 class="novinkinedeli-text">НОВИНКИ НЕДЕЛИ</h2>
+      <div class="novinkinedeli-books">
+        <div class="novinkinedeli-books-onecolumn">
+          <div class="novinkinedeli-books1">
+            <img src="images/book1.jpg" alt="Класические записки психиатра">
+            <div class="novinkinedeli-books-desc">
+              <p>КЛАСИЧЕСКИЕ ЗАПИСКИ ПСИХИАТАРА</p>
+              <p>Лидия Богданович</p>
+            </div>
+          </div>
+          <div class="novinkinedeli-books1">
+            <img src="images/book2.jpg" alt="Тафти жрица">
+            <div class="novinkinedeli-books-desc">
+              <p>ТАФТИ ЖРИЦА. ГУЛЯНИЕ ЖИВЬЕМ В КИНОКАРТИНЕ</p>
+              <p>Вадим Зеланд</p>
+            </div>
+          </div>
+        </div>
+        <div class="novinkinedeli-books-twocolumn">
+          <div class="novinkinedeli-books2">
+            <img src="images/book3.jpg" alt="ЧЕТЫРЕ ПОСЛЕ ПОЛУНОЧИ">
+            <div class="novinkinedeli-books-desc">
+              <p>ЧЕТЫРЕ ПОСЛЕ ПОЛУНОЧИ</p>
+              <p>Стивен Кинг</p>
+            </div>
+          </div>
+          <div class="novinkinedeli-books2">
+            <img src="images/book4.jpg" alt="ГОРОД ЗА ИЗГОРОДЬЮ">
+            <div class="novinkinedeli-books-desc">
+              <p>ГОРОД ЗА ИЗГОРОДЬЮ</p>
+              <p>Эли Фрей</p>
+            </div>
+          </div>
+        </div>
+        <div class="novinkinedeli-books-threecolumn">
+          <div class="novinkinedeli-books2">
+            <img src="images/book5.jpg" alt="УНИКАЛЬНЫЙ ЭКЗЕМПЛЯР. ИСТОРИИ О ТОМ О СЕМ.">
+            <div class="novinkinedeli-books-desc">
+              <p>УНИКАЛЬНЫЙ ЭКЗЕМПЛЯР. ИСТОРИИ О ТОМ О СЕМ</p>
+              <p>Том Хэнкс</p>
+            </div>
+          </div>
+          <div class="novinkinedeli-books2">
+            <img src="images/book6.jpg" alt="КОД ЛИХОРАДКИ" >
+            <div class="novinkinedeli-books-desc">
+              <p>КОД ЛИХОРАДКИ</p>
+              <p>Джеймс Дэшнер</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="novinkinedeli-form">
+      <h3>Заказать книгу к определенной дате и к назначенному времени Вы можете заполнив заявку:</h3>
+      <form action="https://oz.by" method="post" name="form-application">
+        <div class="novinkinedeli-form-text">ИМЯ:<br> <input name="myname" type="text" required></div>
+        <div class="novinkinedeli-form-text">ФАМИЛИЯ:<br> <input name="surname" type="text" required></div>
+        <div class="novinkinedeli-form-text">Email:<br><input type="email" name="myemail" required></div>
+        <div class="novinkinedeli-form-checkbox">
+          <p>ВЫ ЯВЛЯЕТЕСЬ ЧЛЕНОМ НАШЕГО КЛУБА:</p>
+          Да <input type="checkbox" name="party-club" value="да"> Нет <input type="checkbox" name="party-club" value="нет">
+        </div>
+
+        <div class="novinkinedeli-form-book">НАЗВАНИЕ КНИГИ:<br> <input class="" name="namebook" type="text" required></div>
+        <div class="novinkinedeli-form-book">АВТОР:<br> <input class="" name="author" type="text" required></div>
+        <div class="novinkinedeli-form-time">ВЫБЕРЕТЕ ДАТУ И ВРЕМЯ ДОСТАВКИ:<br> <input name="date" type="date" required>
+          <input name="time" type="time" required></div>
+
+        <input type="submit" name="submit" value="ОТПРАВИТЬ">
+      </form>
+    </section>
+  </main>
+
+  <footer class="novinkinedeli-footer">
+    <p> О полученных новинках вы сможете узнать позвонив по телефону +375-44-598-20-40 или на нашем сайте. </p>
+  </footer>
+</body>
+
+</html>
