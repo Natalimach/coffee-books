@@ -14,8 +14,30 @@
   </div>
   <div class="header-osnovnoy">
     <header class="header-osnovnoy-shadow">
-      <div class="header-osnovnoy-logo">
+
+      <div class="header-osnovnoy-logo" id="little-logo">
+        <a href="index.html">
         <img src="images/aboutcafefoto1.png" alt="логотип книги">
+      </a>
+
+      <div id="myNavLittle" class="overlaymenu">
+        <a href="javascript:void(0)" class="closebtnmenu" onclick="closeNavMenu()">&times;</a>
+        <div class="overlay-content-menu">
+          <a href="aboutcafe.html" >НАШЕ КАФЕ  </a>
+          <a href="interior_str.html">ИНТЕРЬЕР</a>
+          <a href="novinki_nedeli.html">НОВИНКИ НЕДЕЛИ</a>
+          <a href="merop.html">МЕРОПРИЯТИЯ</a>
+          <a href="contacts.html">КОНТАКТЫ</a>
+          <a href="cofecard.html">КОФЕЙНАЯ КАРТА</a>
+          <a href="teacard.html">ЧАЙНАЯ КАРТА</a>
+          <a href="winecard.html" class="overlay-content-menu-activ">ВИННАЯ КАРТА</a>
+          <a href="osnovnoemeny.html">ОСНОВНОЕ МЕНЮ</a>
+
+        </div>
+      </div>
+
+
+    <span style="font-size:30px;cursor:pointer;color:#ffffff;" onclick="openNavMenu()">&#9776;</span>
       </div>
       <p class="header-osnovnoy-name-all" id="cofecard-text"><b> ВИННАЯ КАРТА </b></p>
       <div class="header-osnovnoy-strelka" id="header-strelka">
@@ -191,6 +213,16 @@
       <img src="images/winefoto.png" alt="Бутылка и бокал вина">
     </div>
   </div>
+  <script src="buttunmeny.js"></script>
 
+  <script>
+function openNavMenu() {
+    document.getElementById("myNavLittle").style.height = "100%";
+}
+
+function closeNavMenu() {
+    document.getElementById("myNavLittle").style.height = "0%";
+}
+</script>
 </body>
 </html>

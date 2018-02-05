@@ -977,6 +977,14 @@ body {
 
 /*  страница интерьер*/
 
+
+#little-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
 #header-fon-interior{
   background-image: url("images/int9.jpg");
 }
@@ -991,6 +999,7 @@ body {
 #header-strelka {
   margin-top: 175px;
 }
+
 
 .interior-text {
   text-align: justify;
@@ -1553,6 +1562,66 @@ h2.novinkinedeli-text {
   text-indent: 20px;
 }
 
+.header-novinkinedeli-logo{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+.overlaymenu {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.8);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+
+.overlay-content-menu {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.overlaymenu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlaymenu a:hover, .overlaymenu a:focus {
+text-decoration: underline;
+}
+
+.overlaymenu .closebtnmenu {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 40px;
+
+}
+
+.overlaymenu .closebtnmenu:hover{
+  text-decoration:none;
+}
+.overlay-content-menu .overlay-content-menu-activ {
+text-decoration: underline;
+}
+
 /*страница мероприятия*/
 
 .novinkinedeli-all {
@@ -1996,6 +2065,13 @@ padding-bottom: 10px;
   .qwe img {
     width: 99%;
   }
+
+
+#little-logo{
+  justify-content: space-between;
+  padding-left: 15px;
+
+}
   /*страница кофейная карта*/
   .coffee-card-meny {
     font-size: 35px;
@@ -2119,6 +2195,14 @@ padding-bottom: 10px;
   .tabcontent1 figure {
     margin-top: 10vh;
   }
+
+  .header-novinkinedeli-logo{
+    padding: 10px 20px;
+  }
+
+
+
+
   /*страница мероприятия*/
   .diskysvening-tema h3 {
     font-size: 1.3em;

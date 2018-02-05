@@ -14,15 +14,47 @@
 
   <div class="header-fon" id="Aboutcafe-fon"> </div>
   <div class="Aboutcafe-tab-osn">
+
+
     <div class="header-novinkinedeli-logo">
+      <a href="index.html">
       <img src="images/aboutcafefoto1.png" alt="логотип книги">
+    </a>
+
+    <div id="myNavLittle" class="overlaymenu">
+      <a href="javascript:void(0)" class="closebtnmenu" onclick="closeNavMenu()">&times;</a>
+      <div class="overlay-content-menu">
+        <a href="aboutcafe.html" class="overlay-content-menu-activ">НАШЕ КАФЕ  </a>
+        <a href="interior_str.html">ИНТЕРЬЕР</a>
+        <a href="novinki_nedeli.html">НОВИНКИ НЕДЕЛИ</a>
+        <a href="merop.html">МЕРОПРИЯТИЯ</a>
+        <a href="contacts.html">КОНТАКТЫ</a>
+        <a href="cofecard.html">КОФЕЙНАЯ КАРТА</a>
+        <a href="teacard.html">ЧАЙНАЯ КАРТА</a>
+        <a href="winecard.html">ВИННАЯ КАРТА</a>
+        <a href="osnovnoemeny.html">ОСНОВНОЕ МЕНЮ</a>
+        <!--<div class="right" id="right-menu">
+          <button class="dropdown-btn" id="right-all">МЕНЮ <i class="fa fa-caret-down"></i></button>
+          <div class="dropdown-container" id="dropdown-container-all">
+            <a href="cofecard.html">Кофейная карта</a>
+            <a href="teacard.html">Чайная карта</a>
+            <a href="winecard.html">Винная карта</a>
+            <a href="osnovnoemeny.html">Основное меню</a>
+          </div>
+        </div>-->
+      </div>
     </div>
-    <nav class="Aboutcafe-tab">
+
+
+  <span style="font-size:30px;cursor:pointer;color:#ffffff;" onclick="openNavMenu()">&#9776;</span>
+    </div>
+
+    <div class="Aboutcafe-tab">
       <button class="tablinks" onclick="aboutCafe(event, 'Aboutcafe-us')" id="defaultOpen">наше<br>кафе</button>
       <button class="tablinks" onclick="aboutCafe(event, 'Aboutcafe-evening')">дискуссионные <br> вечера</button>
       <button class="tablinks" onclick="aboutCafe(event, 'Aboutcafe-games')">настольные<br>игры</button>
       <button class="tablinks" onclick="aboutCafe(event, 'Aboutcafe-book')">про<br> книги</button>
-    </nav>
+    </div>
     <main class="tabcontent1">
       <figure>
         <img src="images/venz8.png" alt="вензеля">
@@ -72,6 +104,17 @@
       </figure>
     </main>
   </div>
+
+  <script>
+function openNavMenu() {
+    document.getElementById("myNavLittle").style.height = "100%";
+}
+
+function closeNavMenu() {
+    document.getElementById("myNavLittle").style.height = "0%";
+}
+</script>
+
 
   <script src="quote.js"></script>
 

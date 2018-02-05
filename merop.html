@@ -13,7 +13,28 @@
 <body>
 
   <div class="header-novinkinedeli-logo">
+    <a href="index.html">
     <img src="images/aboutcafefoto1.png" alt="логотип книги">
+  </a>
+
+  <div id="myNavLittle" class="overlaymenu">
+    <a href="javascript:void(0)" class="closebtnmenu" onclick="closeNavMenu()">&times;</a>
+    <div class="overlay-content-menu">
+      <a href="aboutcafe.html" >НАШЕ КАФЕ  </a>
+      <a href="interior_str.html">ИНТЕРЬЕР</a>
+      <a href="novinki_nedeli.html">НОВИНКИ НЕДЕЛИ</a>
+      <a href="merop.html" class="overlay-content-menu-activ">МЕРОПРИЯТИЯ</a>
+      <a href="contacts.html">КОНТАКТЫ</a>
+      <a href="cofecard.html">КОФЕЙНАЯ КАРТА</a>
+      <a href="teacard.html">ЧАЙНАЯ КАРТА</a>
+      <a href="winecard.html">ВИННАЯ КАРТА</a>
+      <a href="osnovnoemeny.html">ОСНОВНОЕ МЕНЮ</a>
+
+    </div>
+  </div>
+
+
+<span style="font-size:30px;cursor:pointer;color:#ffffff;" onclick="openNavMenu()">&#9776;</span>
   </div>
 
   <main class="novinkinedeli">
@@ -70,6 +91,18 @@
     <p>
       Возникли вопросы? Звните по телефону +375-44-598-20-40. </p>
   </footer>
+
+  <script>
+function openNavMenu() {
+    document.getElementById("myNavLittle").style.height = "100%";
+}
+
+function closeNavMenu() {
+    document.getElementById("myNavLittle").style.height = "0%";
+}
+</script>
+
+  <script src="buttunmeny.js"></script>
 </body>
 
 </html>
